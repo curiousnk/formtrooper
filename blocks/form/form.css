@@ -802,3 +802,7 @@ main div.form-wrapper {
 main .form form select[multiple] {
     height: calc(42px + 50px);
 }
+
+main .form .field-submit button {
+  background: green;
+}
