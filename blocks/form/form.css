@@ -427,6 +427,8 @@ main form .file-wrapper > button{
     display: flex;
 }
 
+main .form .field-submit button { background: green; }
+
 main .form button:hover {
     background: var(--form-button-background-hover-color);
 }
