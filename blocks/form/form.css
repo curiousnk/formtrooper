@@ -413,10 +413,6 @@ input::file-selector-button {
     text-align: center;
 }
 
-main .form .field-submit button {
-  background: green;
-}
-
 main .form button {
     color: var(--form-button-color);
     background: var(--form-button-background-color);
@@ -430,6 +426,11 @@ main .form button {
 main form .file-wrapper > button{
     display: flex;
 }
+
+main .form .field-submit button {
+  background: green;
+}
+
 
 main .form button:hover {
     background: var(--form-button-background-hover-color);
