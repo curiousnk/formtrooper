@@ -38,6 +38,7 @@ module.exports = {
       'number-input': 22,
       panel: 17,
       'radio-group': 20,
+      cards: 20,
       'form-reset-button': 7,
       'form-submit-button': 7,
       'telephone-input': 20,
