@@ -24,12 +24,12 @@ export default async function decorate(fieldDiv, fieldJson, parentElement, formI
       const { payload } = e;
 
       payload?.changes?.forEach((change) => {
-         console.log('🔄 Enum changed:', change.currentValue);
-         if (change.currentValue === '0') {
+        console.log('🔄 Enum changed:', change.currentValue);
+        if (change.currentValue === '0') {
           console.log('🔄 Item 1');
-         } else if (change.currentValue === '1') {
+        } else if (change.currentValue === '1') {
           console.log('🔄 Item 2');
-         }
+        }
       });
     });
   });
