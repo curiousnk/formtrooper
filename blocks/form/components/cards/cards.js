@@ -17,5 +17,17 @@ export default async function decorate(fieldDiv, fieldJson, parentElement, formI
   // TODO: Implement your custom component logic here
   // You can access the field properties via fieldJson.properties
 
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
+
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          console.log('🔄 Enum changed:', change.currentValue);
+        }
+      });
+    });
+  });
+
   return fieldDiv;
 }
