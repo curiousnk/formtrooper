@@ -1,3 +1,5 @@
+import { subscribe } from '../../rules/index.js';
+
 /**
  * Custom cards component
  * Based on: Radio Group
@@ -17,7 +19,7 @@ export default async function decorate(fieldDiv, fieldJson, parentElement, formI
   // TODO: Implement your custom component logic here
   // You can access the field properties via fieldJson.properties
 
-  subscribe(element, formId, (fieldDiv, fieldModel) => {
+  subscribe(fieldDiv, formId, (el, fieldModel) => {
     fieldModel.subscribe((e) => {
       const { payload } = e;
 
