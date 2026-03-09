@@ -24,9 +24,9 @@ export default async function decorate(fieldDiv, fieldJson, parentElement, formI
       const { payload } = e;
 
       payload?.changes?.forEach((change) => {
-        if (change?.propertyName === 'enum') {
+       // if (change?.currentValue === 'enum') {
           console.log('🔄 Enum changed:', change.currentValue);
-        }
+        //}
       });
     });
   });
