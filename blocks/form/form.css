@@ -383,7 +383,8 @@ main .form .form-image-wrapper img {
 
 /* For cards with icons or images */
 main .form form fieldset.cards > .radio-wrapper > label > img,
-main .form form fieldset.cards > .checkbox-wrapper > label > img {
+main .form form fieldset.cards > .checkbox-wrapper > label > img,
+main .form form fieldset.card .radio-wrapper picture img {
     max-width: 18px;
     max-height: 18px;
     object-fit: contain;
@@ -805,13 +806,5 @@ main .form form select[multiple] {
     height: calc(42px + 50px);
 }
 
-.card .radio-wrapper .card-image,
-.card .radio-wrapper picture img {
-  max-width: 48px;
-  max-height: 48px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-}
 
 
