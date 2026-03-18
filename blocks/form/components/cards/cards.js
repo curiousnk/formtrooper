@@ -2,7 +2,7 @@ import { createOptimizedPicture } from '../../../../scripts/aem.js';
 import { subscribe } from '../../rules/index.js';
 
 /** Default images by option order (red, green). Enum `image` overrides. */
-const DEFAULT_CARD_IMAGES = ['/icons/redcard.png', '/icons/greencard.png'];
+const DEFAULT_CARD_IMAGES = ['/icons/individual.png', '/icons/business.png'];
 
 function defaultCardImage(index) {
   return DEFAULT_CARD_IMAGES[index % DEFAULT_CARD_IMAGES.length] || DEFAULT_CARD_IMAGES[0];
