@@ -19,7 +19,7 @@ function createCard(element, enums) {
 
     const image = createOptimizedPicture(
       enums[index]?.image || 'https://customcomp--formtrooper--curiousnk.aem.page/icons/redcard.png',
-      'card-image'
+      'card-image',
     );
 
     radioWrapper.appendChild(image);
