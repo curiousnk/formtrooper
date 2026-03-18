@@ -15,7 +15,6 @@ import { createOptimizedPicture } from '../../../../scripts/aem.js';
  * @param {string} formId - The unique identifier of the form.
  */
 
-
 function createCard(element, enums) {
   element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
     if (enums[index]?.name) {
@@ -31,7 +30,7 @@ function createCard(element, enums) {
 
     const image = createOptimizedPicture(
       enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
-      'card-image'
+      'card-image',
     );
 
     radioWrapper.appendChild(image);
@@ -56,12 +55,12 @@ export default async function decorate(fieldDiv, fieldJson, parentElement, formI
         //   console.log('🔄 Item 2');
         // }
         if (change?.propertyName === 'enum') {
-          createCard(element, change.currentValue);
+          createCard(el, change.currentValue);
         }
       });
     });
-  
-    element.addEventListener('change', (e) => {
+
+    el.addEventListener('change', (e) => {
       e.stopPropagation();
       const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];
       fieldModel.value = value.name;
