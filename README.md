@@ -39,6 +39,7 @@ npm run lint
 1. Add the [AEM Code Sync GitHub App](https://github.com/apps/aem-code-sync) to the repository
 1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
 1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000`)
+1. **Open the form page**: The proxy serves the same path as the remote. Your content lives at `/content/ftroop/`, so use **`http://localhost:3000/content/ftroop/`** (not the root). If you see a blank page or 404s in the terminal for `/`, `nav.plain.html`, or `footer.plain.html`, you're on the wrong path—navigate to `/content/ftroop/`.
 1. Open the `{repo}` directory in your favorite IDE and start coding :)
 
 ## Custom Form Components
