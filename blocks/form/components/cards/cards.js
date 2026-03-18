@@ -48,8 +48,11 @@ export default function decorate(element, fieldJson, container, formId) {
 
     element.addEventListener('change', (e) => {
       e.stopPropagation();
-      const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];
-      fieldModel.value = value.name;
+      const idx = parseInt(e.target.dataset.index, 10);
+      console.log('fieldModel.enum', fieldModel.enum);
+      const enumEntry = fieldModel.enum?.[idx];
+      const submissionValue = typeof enumEntry === 'object' ? enumEntry.value : enumEntry;
+      fieldModel.value = submissionValue;
     });
   });
 
