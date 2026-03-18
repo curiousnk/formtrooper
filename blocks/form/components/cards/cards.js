@@ -62,7 +62,7 @@ export default async function decorate(fieldDiv, fieldJson, parentElement, formI
 
     el.addEventListener('change', (e) => {
       e.stopPropagation();
-      const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];
+      // const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];
       // fieldModel.value = value.name;
     });
   });
