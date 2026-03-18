@@ -390,6 +390,13 @@ main .form form fieldset.card .radio-wrapper picture img {
     object-fit: contain;
 }
 
+/* For custom card component with icons or images */
+main .form form fieldset.card .radio-wrapper picture img {
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: contain;
+}
+
 /* Responsive adjustments for cards */
 @media (width <= 768px) {
     main .form form fieldset.cards > .radio-wrapper,
