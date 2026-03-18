@@ -389,16 +389,6 @@ main .form form fieldset.cards > .checkbox-wrapper > label > img {
     object-fit: contain;
 }
 
-/* Card option icons (picture + .card-image; sibling of label, not inside it) */
-main .form form fieldset.cards > .radio-wrapper picture img.card-image,
-main .form form fieldset.cards > .checkbox-wrapper picture img.card-image {
-    max-width: 48px;
-    max-height: 48px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-}
-
 /* Responsive adjustments for cards */
 @media (width <= 768px) {
     main .form form fieldset.cards > .radio-wrapper,
@@ -814,3 +804,14 @@ main div.form-wrapper {
 main .form form select[multiple] {
     height: calc(42px + 50px);
 }
+
+.card .radio-wrapper .card-image,
+.card .radio-wrapper picture img {
+  max-width: 48px;
+  max-height: 48px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+
