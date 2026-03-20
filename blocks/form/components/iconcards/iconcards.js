@@ -47,7 +47,7 @@ export default async function decorate(fieldDiv, fieldJson, parentElement, formI
   fieldDiv.classList.add('iconcards');
   createCard(fieldDiv, fieldJson.enum);
 
-  subscribe(fieldDiv, formId, (fieldModel) => {
+  subscribe(fieldDiv, formId, (_fieldDiv,fieldModel) => {
     fieldModel.subscribe((e) => {
       const { payload } = e;
       payload?.changes?.forEach((change) => {
