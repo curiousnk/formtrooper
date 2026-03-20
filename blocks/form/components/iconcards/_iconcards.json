@@ -15,8 +15,8 @@
                 "1"
               ],
               "enumNames": [
-                "Item 1",
-                "Item 2"
+                "Individual",
+                "Business"
               ],
               "orientation": "horizontal",
               "fd:viewType": "iconcards"
