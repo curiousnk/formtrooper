@@ -17,8 +17,8 @@
 }
 
 main .form form fieldset.iconcards .radio-wrapper picture img {
-    max-width: 18px;
-    max-height: 18px;
+    max-width: 60px;
+    max-height: 60px;
     object-fit: contain;
 }
 
