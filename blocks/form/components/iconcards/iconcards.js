@@ -44,7 +44,7 @@ function createCard(element, enums) {
  * @param {string} formId - The unique identifier of the form.
  */
 export default async function decorate(fieldDiv, fieldJson, parentElement, formId) {
-  fieldDiv.classList.add('card');
+  fieldDiv.classList.add('iconcards');
   createCard(fieldDiv, fieldJson.enum);
 
   subscribe(fieldDiv, formId, (fieldModel) => {
