@@ -34,6 +34,7 @@ module.exports = {
       'file-input': 20,
       'form-fragment': 16,
       'form-image': 7,
+      iconcards: 20,
       'multiline-input': 23,
       'number-input': 22,
       panel: 17,
